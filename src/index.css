@@ -44,8 +44,9 @@
 }
 
 .users {
-  list-style-image: url("/images/profileIcon.svg");
-  margin-left: 10px;
+  /* list-style-image: url("/images/profileIcon.svg"); */
+  list-style-type: none;
+  margin-left: 0px;
 }
 .users p {
   font-size: 20px;
@@ -53,6 +54,20 @@
 .comments {
   background-color: #f0f5fa;
 }
+.initials-circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
 /* Home End */
 
 /* Main */

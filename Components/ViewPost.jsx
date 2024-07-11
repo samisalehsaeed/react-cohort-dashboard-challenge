@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import DisplayInitials from "./DisplayInitials";
 
 export default function ViewPost() {
   const [post, setPost] = useState(null);
@@ -34,6 +35,7 @@ export default function ViewPost() {
     <div>
       <ul>
         <li className="users">
+          <DisplayInitials />
           <h3>{post.title}</h3>
           <br />
           <p>{post.content}</p>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AddComment from "./AddComment";
+import DisplayInitials from "./DisplayInitials";
 
 export default function CreatePost() {
   const [posts, setPosts] = useState([]);
@@ -69,9 +70,9 @@ export default function CreatePost() {
       <ul className="users">
         {posts.map((post, index) => (
           <li className="users" key={index}>
-            <h2>User</h2>
+            <DisplayInitials contactId={post.contactId} />
             <h3>
-              <Link to={`/ViewPost/${post.id}`}>{post.title} </Link>
+              <Link to={`/ViewPost/${post.id}`}>{post.title}</Link>
             </h3>
             <p>{post.content}</p>
             <AddComment postId={post.id} />
